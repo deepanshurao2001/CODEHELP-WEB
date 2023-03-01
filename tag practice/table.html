@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table style="caption-side: bottom;">
+        <caption>saving table</caption>
+        <thead>
+        <tr>
+            <th>Month</td>
+            <th>Saving</td>
+                <th>Saving for Holiday!</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>jan</td>
+            <td>200</td>
+            <td rowspan="3" style="text-align: center;">2000</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>feb</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>march</td>
+            <td>700</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>1700</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <form action="https://www.google.com">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Welcome to login page</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>username</td>
+                <td><input type="text" id="user"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" id="password"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" style="margin-left:auto; margin-right:auto" ><button>login</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</form>
+</body>
+</html>
