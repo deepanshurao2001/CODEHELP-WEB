@@ -9,16 +9,5 @@ p{
     border: 1px solid blue;
     border-collapse: collapse;
 }
-a:hover{
-    color: chartreuse;
-}
-html{
-    scroll-behavior: smooth;
-}
-a:visited{
-    color: hotpink;
-}
-
-
 
 
