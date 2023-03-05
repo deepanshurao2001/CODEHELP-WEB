@@ -1,0 +1,13 @@
+p{
+    color: blue;
+} 
+.red{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+.blue{
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+
