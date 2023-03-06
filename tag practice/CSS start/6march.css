@@ -1,0 +1,17 @@
+.box{
+    display: inline;
+    background-image: linear-gradient(to bottom right,white, rgb(142, 221, 142), aqua);
+}
+.mydiv{
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(at right 2%,rgb(133, 133, 226) 1%,white);
+}
+#my{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+   
+}
