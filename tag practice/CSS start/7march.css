@@ -1,0 +1,34 @@
+#mydiv{
+    border: 1px solid black;
+    width:400px;
+    height: 100px; 
+    background-image: linear-gradient(10deg,white,rgb(183, 242, 242) 30%,rgb(53, 53, 183));  
+}
+#my{
+    border: 1px solid black;
+    width:200px;
+    height: 200px; 
+    background-image: radial-gradient(white 15%,rgb(183, 242, 242) 30%,rgb(53, 53, 183) )
+}
+#mydiv2{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-image: conic-gradient(white 15%,rgb(183, 242, 242) 30%,rgb(114, 114, 183),white);
+}
+#mydiv3 h1{
+    font-size: 120px;
+    background: linear-gradient(to right,white,rgb(183, 242, 242) 30%,rgb(53, 53, 183));
+    padding: 50px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
+    filter: drop-shadow(3px 3px #333);
+    
+}
+#mydiv3{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(135deg, #fa691a 0%, #d72263 50%);
+
+}
