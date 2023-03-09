@@ -1,0 +1,12 @@
+#A{
+    background-color: aqua;
+    margin: 200px;
+  /*transform: translateY(50px);
+    transform: translateX(50px);
+    transform: translate(50px,50px);
+    transform: rotate(15deg);
+    transform: scale(2,5); 
+    transform: scaleX(1);
+    transform: scaleY(2)*/
+    transform: skew(20deg);
+}
