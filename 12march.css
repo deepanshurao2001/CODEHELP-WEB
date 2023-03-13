@@ -16,11 +16,11 @@
     justify-content: center;
     align-items: center;
     height:100%;
-    transform-style: preserve-3d;  
+    transform-style: preserve-3d; 
     z-index: -1;
 }
 .background{
-    transform:translateZ(-40px) scale(5);
+    transform:translateZ(-35px) scale(5);
 }
 .foreground{
     transform: translateZ(-20px)  scale(3);
@@ -30,5 +30,13 @@
     height: 100%;
     width: 100%;
     z-index:-1;
-    object-fit:fill;
+    object-fit:cover;
+}
+h1{
+    position: absolute;
+    top: 5rem;
+    letter-spacing: 4px;
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0, 0, 0.3) ;
 }
