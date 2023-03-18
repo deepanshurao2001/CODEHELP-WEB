@@ -1,0 +1,47 @@
+.container{
+    width: 100%;
+    height: 500px;
+    background-color: yellow;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+.box{
+    height: 212px;
+    width: 212px;
+    border: 2px solid green;
+    background-color: aqua;
+    animation: deepanshu;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    /* animation-direction: alternate; */
+    animation-fill-mode: backwards;
+
+}
+@keyframes deepanshu{
+    0%{
+        width: 212px;
+    }
+    30%{
+        width: 400px;
+        background-color: blueviolet;
+    }
+    60%{
+        width: 800px;
+    }
+    100%{
+        width: 100%;
+        background-color: brown;
+    }
+}
+/* @keyframes deepanshu{
+    from{
+        width: 212px;
+    }
+    to{
+        width: 100%;
+
+    }
+} */
