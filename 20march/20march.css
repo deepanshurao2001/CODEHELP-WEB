@@ -65,11 +65,12 @@ a{
     padding-bottom: 8rem;
 }
 .faded-text{
+    position: absolute;
     user-select: none;
     font-size:7em;
     color: rgb(231,231,231);
     bottom: -16%;
-    left: -5%;
+    left: 5%;
     font-weight: bold;
     transition: all 3s;
 }
@@ -128,4 +129,111 @@ a{
 }
 .absolute{
     position: absolute;
+}
+.user-image{
+    padding:2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleimage 5s linear infinite;
+}
+.user-image img{
+    z-index: -4;
+}
+@keyframes scaleimage{
+    0%{
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+        filter: grayscale(1);
+        box-shadow: 3px 3px 10px black;
+    }
+
+    100%{
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
+.icon-dots{
+    z-index: 4;
+    bottom: -1rem;
+    right: 0;
+    animation-name: dotsAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dotsAnimation{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    } 
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+.icon-cube{
+    z-index: 5;
+    top: -0.5em;
+    right: 1em;
+    animation: cubeRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes cubeRotate{
+    0%{
+        transform: rotateY(0deg) translateY(0px);
+    }
+
+    50%{
+        transform: rotateY(180deg) translateY(-15px);
+    }
+
+    100%{
+        transform: rotateY(360deg) translateY(0px);
+    }
+}
+.icon-circle{
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeEffect;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes shakeEffect{
+    50%{
+        left: 5%;
+        bottom: 10%;
+    }
+}
+.icon-zigzag{
+    z-index: 6;
+    top: 1.5;
+    left: -0.3em;
+    animation: zigzagAnimation 5s ease-in infinite;
+}
+@keyframes zigzagAnimation{
+    50%{
+        left: 5%;
+        top: 2%;
+    }
+}
+.icon-plus{
+    z-index: 6;
+    top:-0.8;
+    left: 50%;
+    animation-name:shakeEffectPlus 5s ease-in infinite ;
+}
+@keyframes shakeEffectPlus{
+    50%{
+        top: 3%;
+        left: 48%;
+    }
 }
