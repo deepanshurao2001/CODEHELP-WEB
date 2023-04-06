@@ -1,0 +1,7 @@
+.card:hover svg{
+   
+    filter: drop-shadow(25px 15px 20px  rgba(198, 196, 196, 0.4));
+}
+#payment:hover{
+    background-color: deepskyblue;
+}
