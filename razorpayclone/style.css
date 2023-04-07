@@ -2,6 +2,3 @@
    
     filter: drop-shadow(50px 20px 30px  rgba(235, 229, 229, 0.4));
 }
-#payment:hover{
-    background-color: deepskyblue;
-}
