@@ -1,4 +1,14 @@
 .card:hover svg{
    
     filter: drop-shadow(50px 20px 30px  rgba(235, 229, 229, 0.4));
+
+}
+.card:hover img{
+   
+    visibility: visible;  
+    transition-property: visibility;
+    transition-delay: 0.2s;
+    transition-timing-function: ease;
+
+    
 }
