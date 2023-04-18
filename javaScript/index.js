@@ -31,15 +31,29 @@ console.log(num1 === str1);
  }
 
 //factor function
-function createRectangle(){
+function createRectangle(len,bre){
     return rectangle={
-        length: 1,
-        breadth: 2,
+        length: len,
+        breadth: bre,
 
         draw(){
-            console.log('drawing rectangle');
+            console.log(this.length*this.breadth);
         }
     };
 }
 
-let rectangleObj1 = createRectangle();
+let rectangleObj1 = createRectangle(1,2);
+let rectangleObj2 = createRectangle(5,8);
+let rectangleObj3 = createRectangle(2,9);
+
+
+// constructor function
+function Rect(){
+    this.length =1;
+    this.breadth =2;
+    this.draw= function(){
+        console.log('Drawing')
+    }
+}
+//object creation using constructor function
+let rectangleObject = new Rect();
