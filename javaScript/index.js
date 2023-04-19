@@ -29,6 +29,7 @@ console.log(num1 === str1);
 
 
  }
+ 
 
 //factor function
 function createRectangle(len,bre){
@@ -41,19 +42,85 @@ function createRectangle(len,bre){
         }
     };
 }
-
+Rect.name;
 let rectangleObj1 = createRectangle(1,2);
 let rectangleObj2 = createRectangle(5,8);
 let rectangleObj3 = createRectangle(2,9);
 
 
 // constructor function
-function Rect(){
-    this.length =1;
-    this.breadth =2;
+function Rect(len,bre){
+    this.length =len;
+    this.breadth =bre;
     this.draw= function(){
         console.log('Drawing')
     }
 }
 //object creation using constructor function
-let rectangleObject = new Rect();
+let rectangleObject = new Rect(6,9);
+rectangleObject.color = 'yellow';
+console.log(rectangleObject);
+delete rectangleObject.color;
+console.log(rectangleObject);
+
+let c=10;
+function inc(c) {
+    c++
+}
+inc(c);
+console.log(c);
+
+let d= {value:10};
+function inc(d) {
+    d.value++;
+}
+inc(d);
+console.log(d.value);
+
+let rectangle3 ={
+    length:2,
+    breadth:4,
+};
+
+//for-in loop
+for(let key in rectangle3){
+    //keys are reflected through key variable
+    //values are reflected through rectangle[key]
+
+    console.log(key,rectangle3[key]);
+}
+
+// for-of loop
+for(let key of Object.entries(rectangle3)){
+    console.log(key);
+}
+
+if('color' in rectangle3){
+    console.log('present');
+}
+else{
+    console.log('Absent');
+}
+if('length' in rectangle3){
+    console.log('present');
+}
+else{
+    console.log('Absent');
+}
+
+
+let src= {
+    a:10,
+    b:20,
+    c:30
+};
+let dest = {};
+
+for(let key in src){
+    dest[key]=src[key];
+}
+console.log(src);
+console.log(dest);
+src.a++;
+console.log(src);
+console.log(dest);
