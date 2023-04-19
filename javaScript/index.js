@@ -124,3 +124,29 @@ console.log(dest);
 src.a++;
 console.log(src);
 console.log(dest);
+
+let src1={
+    x:10,
+    y:20,
+    z:30
+};
+let src2= {value:33};
+let dest2 = Object.assign({},src1,src2);
+console.log(dest2)
+
+src.x++;
+console.log(src1);
+console.log(dest2);
+
+
+let src3 ={
+    q:2, 
+    w:3,
+    e:4
+};
+
+let dest4 = {...src3};
+console.log(dest4);
+src3.q++;
+console.log(src3);
+console.log(dest4);
