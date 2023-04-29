@@ -150,3 +150,23 @@ console.log(dest4);
 src3.q++;
 console.log(src3);
 console.log(dest4);
+
+
+
+// let number = [10,20,30,40,50];
+// console.log(number)
+// const joined = number.join(',');
+// console.log(joined);
+
+let message = 'this is my first message';
+let parts = message.split(' ');
+console.log(parts);
+
+let joined = parts.join('_');
+
+console.log(joined);
+
+let numbers = [50,30,10,20,40];
+numbers.sort();
+
+console.log(numbers);
