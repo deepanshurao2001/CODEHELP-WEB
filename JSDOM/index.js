@@ -30,6 +30,8 @@
 //     myDiv.appendChild(newElement);
 // }
 // document.body.appendChild(myDiv);
+
+
 let element = document.querySelector('#wrapper');
 element.addEventListener('click', function(event){
     if(event.target.nodeName == 'SPAN')
