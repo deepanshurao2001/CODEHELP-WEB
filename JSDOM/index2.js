@@ -38,17 +38,36 @@
 
 //single threading
 
-function addPara(){
-    let para = document.createElement('p');
-    para.textContent = 'Js is Single';
-    document.body.appendChild(para);
-}
+// function addPara(){
+//     let para = document.createElement('p');
+//     para.textContent = 'Js is Single';
+//     document.body.appendChild(para);
+// }
 
-function appendNewMessage(){
-    let para = document.createElement('p');
-    para.textContent = 'Kya haal Chaal';
-    document.body.appendChild(para);
-}
+// function appendNewMessage(){
+//     let para = document.createElement('p');
+//     para.textContent = 'Kya haal Chaal';
+//     document.body.appendChild(para);
+// }
 
-addPara();
-appendNewMessage();
+// addPara();
+// appendNewMessage();
+
+// //event loop
+
+// console.log('Hi!');
+// document.addEventListener('click', function(){
+//     console.log('hello DiDi');
+// });
+
+// console.log("Welcome to Event loop");
+
+
+//setTimeout
+console.log("Hi!")
+
+setTimeout(function timeout() {
+    console.log('Hello Everyone');
+},5000);
+
+console.log("Welcome to SetTime out");
