@@ -1,0 +1,8 @@
+.tab.current-tab{
+    background-color: aliceblue;
+}
+.form-container.active{
+    scale: 1;
+    opacity: 1;
+    display: flex;
+}
